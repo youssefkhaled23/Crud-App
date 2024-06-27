@@ -11,7 +11,7 @@ export default function App() {
       path: "/",
       element: <Layout />,
       children: [
-        { index: true, element: <Main /> },
+        { path: "/", element: <Main /> },
         { path: "update/:id", element: <Update /> },
       ],
     },
